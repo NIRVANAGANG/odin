@@ -2,3 +2,71 @@ h1 {
   color: bisque;
 }
 /* here h1 is our (selector),color is the (property) and bisque(value) */
+
+/* Universal selectors */
+/* * {
+  color: purple;
+} */
+
+/* styles.css */
+
+.alert-text {
+  color: red;
+}
+
+/* styles.css */
+
+#title {
+  background-color: blanchedalmond;
+}
+
+/* Grouping selectors */
+.read {
+  color: white;
+  background-color: black;
+  /* several unique declarations */
+}
+
+.unread {
+  color: white;
+  background-color: black;
+  /* several unique declarations */
+}
+/* We can group the above elements */
+.read,
+.unread {
+  color: white;
+  background-color: black;
+}
+
+/* Chaining selectors in action */
+.subsection.header {
+  color: darkgoldenrod;
+}
+
+.subsection#preview {
+  color: blue;
+}
+
+/* Descendant combinator */
+/* styles.css */
+
+.ancestor .contents {
+  /* some declarations */
+  color: darkslateblue;
+  text-align: center;
+}
+
+.typography {
+  color: coral;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  font-size: 50px;
+  text-align: center;
+  font-weight: 200;
+}
+
+/* Image height and width */
+img {
+  height: 300px;
+  width: 300px;
+}
